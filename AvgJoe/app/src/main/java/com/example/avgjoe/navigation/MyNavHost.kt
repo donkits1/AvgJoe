@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.avgjoe.BikeRack.BikeNav.BikeScreen
 
 @Composable
 fun MyNavHost(navController: NavHostController = rememberNavController(), starDest: String) {
@@ -17,6 +18,9 @@ fun MyNavHost(navController: NavHostController = rememberNavController(), starDe
         }
         composable(route = "CustomerScreen") {
             CustomerScreen(navController = navController)
+        }
+        composable(route = "BikeScreen") {
+            BikeScreen(navController = navController)
         }
     }
 }

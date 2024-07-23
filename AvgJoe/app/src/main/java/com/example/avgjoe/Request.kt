@@ -118,10 +118,10 @@ class Request(navController: NavHostController) {
             //return false}
 
 
-        suspend fun checkOut() {
-            TODO()
-        }
 
 
     }
+//    suspend fun getGBPConversion() {
+//        //https://api.currencyapi.com/v3/latest?apikey=cur_live_iDekR5YCvXwQw1vKOQj0NnthOXNddNRq8r6eo3ue&currencies=GBP
+//    }
 }

@@ -1,16 +1,11 @@
-package com.example.avgjoe.navigation
+package com.example.avgjoe
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.navigation.compose.rememberNavController
-import com.example.avgjoe.Request
-import com.example.avgjoe.Response
+import com.example.avgjoe.navigation.MyNavHost
 import com.example.avgjoe.ui.theme.AvgJoeTheme
-import com.example.avgjoe.ui.theme.GlobalData
 
 class MainActivity : ComponentActivity() {
 
@@ -20,19 +15,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             AvgJoeTheme {
-//                LaunchedEffect(Unit) {
-//                    Log.e("asdf", Request().checkIn("1","0").toString())
-//                }
-
-
-
-                MyNavHost(navController = navController, starDest = "AdminScreen")
-
+                MyNavHost(navController = navController, starDest = "BikeScreen")
             }
-
         }
     }
-
 }
 
 

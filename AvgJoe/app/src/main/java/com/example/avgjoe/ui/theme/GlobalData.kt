@@ -9,6 +9,7 @@ class GlobalData {
         var pin = ""
         var length = 0
         var data : Array<Data> = arrayOf()
+        var customer = ""
 
     }
 }
